@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res/com.kun.panguin"
+    android:orientation="horizontal">
+    <com.kun.panguin.Widget.SlideMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_frame_background"
+        custom:slideMenuRightPadding="80dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:text="第一个功能"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/main_layout"/>
+
+        </LinearLayout>
+    </com.kun.panguin.Widget.SlideMenu>
+</LinearLayout>
